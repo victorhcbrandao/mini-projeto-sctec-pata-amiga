@@ -1,0 +1,159 @@
+ integracao_separacao | separacao_nota | nota_despacho | despacho_entrega | total_erp_entrega | entregas_concluidas
+----------------------+----------------+---------------+------------------+-------------------+---------------------
+                 2.13 |           0.64 |          4.11 |             2.14 |              9.00 |                2091
+(1 linha)
+
+     porte     | pedidos | integracao_separacao | separacao_nota | nota_despacho | despacho_entrega | total_erp_entrega | entregas_concluidas
+---------------+---------+----------------------+----------------+---------------+------------------+-------------------+---------------------
+ Grande        |    1763 |                 1.96 |           0.64 |          3.32 |             2.01 |              7.93 |                 903
+ Media         |    1663 |                 1.98 |           0.62 |          3.34 |             2.03 |              7.95 |                 880
+ Nao Informado |       3 |                 2.00 |           0.00 |          4.00 |             3.00 |              8.50 |                   2
+ Pequena       |     615 |                 3.02 |           0.69 |          8.53 |             2.86 |             15.16 |                 306
+(4 linhas)
+
+ nome_categoria | faturamento | percentual_rede
+----------------+-------------+-----------------
+ Racao          |  1076202.55 |           60.01
+ Medicamento    |   305904.03 |           17.06
+ Petisco        |   128590.16 |            7.17
+ Servico        |    94001.37 |            5.24
+ Higiene        |    92314.45 |            5.15
+ Acessorio      |    64661.39 |            3.61
+ Brinquedo      |    31634.56 |            1.76
+(7 linhas)
+
+     porte     | nome_categoria | faturamento
+---------------+----------------+-------------
+ Grande        | Racao          |   468186.60
+ Grande        | Medicamento    |   135928.72
+ Grande        | Petisco        |    56003.89
+ Grande        | Servico        |    41775.77
+ Grande        | Higiene        |    39253.11
+ Grande        | Acessorio      |    26423.80
+ Grande        | Brinquedo      |    13822.08
+ Media         | Racao          |   443131.62
+ Media         | Medicamento    |   128625.36
+ Media         | Petisco        |    51173.37
+ Media         | Servico        |    37051.79
+ Media         | Higiene        |    34716.87
+ Media         | Acessorio      |    27991.06
+ Media         | Brinquedo      |    14192.11
+ Nao Informado | Racao          |      686.78
+ Nao Informado | Higiene        |      178.00
+ Nao Informado | Petisco        |      121.52
+ Pequena       | Racao          |   164197.55
+ Pequena       | Medicamento    |    41349.95
+ Pequena       | Petisco        |    21291.38
+ Pequena       | Higiene        |    18166.47
+ Pequena       | Servico        |    15173.81
+ Pequena       | Acessorio      |    10246.53
+ Pequena       | Brinquedo      |     3620.37
+(24 linhas)
+
+ canal_pedido  | houve_desconto | pedidos | pedidos_com_valor | ticket_medio | faturamento
+---------------+----------------+---------+-------------------+--------------+-------------
+ App           | Nao            |     160 |               155 |       167.63 |    25982.85
+ App           | Nao Informado  |      58 |                58 |       505.68 |    29329.36
+ App           | Sim            |    1055 |              1018 |       488.04 |   496822.22
+ Loja Fisica   | Nao            |     101 |                97 |       197.55 |    19162.65
+ Loja Fisica   | Nao Informado  |      45 |                43 |       347.75 |    14953.10
+ Loja Fisica   | Sim            |     678 |               661 |       494.04 |   326561.47
+ Nao Informado | Nao            |      27 |                25 |       206.95 |     5173.78
+ Nao Informado | Nao Informado  |       8 |                 8 |       463.31 |     3706.47
+ Nao Informado | Sim            |     202 |               194 |       561.59 |   108949.32
+ Site          | Nao            |     152 |               148 |       189.68 |    28073.34
+ Site          | Nao Informado  |      57 |                56 |       428.13 |    23975.20
+ Site          | Sim            |     823 |               794 |       501.92 |   398520.83
+ Telefone      | Nao            |      34 |                34 |       195.23 |     6637.78
+ Telefone      | Nao Informado  |      12 |                12 |       522.31 |     6267.66
+ Telefone      | Sim            |     218 |               215 |       514.02 |   110513.85
+ WhatsApp      | Nao            |      56 |                55 |       179.26 |     9859.49
+ WhatsApp      | Nao Informado  |      18 |                18 |       447.80 |     8060.34
+ WhatsApp      | Sim            |     340 |               332 |       514.33 |   170758.80
+(18 linhas)
+
+ canal_pedido  | pedidos | faturamento | percentual_rede
+---------------+---------+-------------+-----------------
+ App           |    1273 |   552134.43 |           30.79
+ Site          |    1032 |   450569.37 |           25.13
+ Loja Fisica   |     824 |   360677.22 |           20.11
+ WhatsApp      |     414 |   188678.63 |           10.52
+ Telefone      |     264 |   123419.29 |            6.88
+ Nao Informado |     237 |   117829.57 |            6.57
+(6 linhas)
+
+ cod_praca |      nome_praca      | domicilios_com_pet | faturamento_rateado | percentual_rede | percentual_domicilios | reais_por_domicilio
+-----------+----------------------+--------------------+---------------------+-----------------+-----------------------+---------------------
+ PRC01     | Vale do Itajai       |             148000 |           633746.09 |           35.34 |                 17.29 |                4.28
+ PRC05     | Grande Florianopolis |             132000 |           283546.75 |           15.81 |                 15.42 |                2.15
+ PRC02     | Norte Industrial     |              96000 |           175431.90 |            9.78 |                 11.21 |                1.83
+ PRC06     | Litoral Sul          |              58000 |           137051.20 |            7.64 |                  6.78 |                2.36
+ PRC03     | Litoral Norte        |              61000 |           128872.75 |            7.19 |                  7.13 |                2.11
+ PRC11     | Extremo Oeste        |              63000 |            98359.18 |            5.48 |                  7.36 |                1.56
+ PRC07     | Carbonifera          |              67000 |            88707.42 |            4.95 |                  7.83 |                1.32
+ PRC08     | Serra Catarinense    |              44000 |            80477.64 |            4.49 |                  5.14 |                1.83
+ PRC10     | Meio-Oeste           |              51000 |            58955.63 |            3.29 |                  5.96 |                1.16
+ PRC04     | Foz do Itajai        |              74000 |            46749.72 |            2.61 |                  8.64 |                0.63
+ PRC12     | Planalto Norte       |              33000 |            31100.84 |            1.73 |                  3.86 |                0.94
+ PRC09     | Planalto Serrano     |              29000 |            29323.10 |            1.64 |                  3.39 |                1.01
+(12 linhas)
+
+ pedidos_sem_loja | faturamento_sem_praca
+------------------+-----------------------
+                3 |                986.30
+(1 linha)
+
+ total_rede | total_rateado  | sem_loja | diferenca
+------------+----------------+----------+-----------
+ 1793308.51 | 1792322.210000 |   986.30 |      0.00
+(1 linha)
+
+ cod_loja |              nome_loja               |          cidade           | populacao_cidade | itens | itens_por_mil_habitantes | dias_entrega | pedidos | pedidos_com_itens | entregas_concluidas
+----------+--------------------------------------+---------------------------+------------------+-------+--------------------------+--------------+---------+-------------------+---------------------
+ LJ-012   | Pata Amiga Rio dos Cedros            | Rio dos Cedros            |            11322 |   474 |                    41.87 |        14.24 |      61 |                59 |                  29
+ LJ-008   | Pata Amiga Presidente Getulio        | Presidente GetÃºlio        |            16359 |   570 |                    34.84 |        14.16 |      88 |                80 |                  43
+ LJ-011   | Pata Amiga Ibirama                   | Ibirama                   |            18613 |   597 |                    32.07 |        15.39 |      98 |                89 |                  54
+ LJ-016   | Pata Amiga Itapoa                    | ItapoÃ¡                    |            20586 |   534 |                    25.94 |        15.39 |      84 |                80 |                  36
+ LJ-020   | Pata Amiga Santo Amaro da Imperatriz | Santo Amaro da Imperatriz |            22357 |   530 |                    23.71 |        15.88 |      85 |                81 |                  50
+ LJ-009   | Pata Amiga Taio                      | TaiÃ³                      |            18173 |   352 |                    19.37 |        14.57 |      59 |                58 |                  30
+ LJ-005   | Pata Amiga Timbo                     | TimbÃ³                     |            45011 |   804 |                    17.86 |         7.70 |     123 |               115 |                  60
+ LJ-007   | Pata Amiga Gaspar                    | Gaspar                    |            71133 |  1189 |                    16.72 |         8.01 |     181 |               167 |                  96
+ LJ-027   | Pata Amiga Otacilio Costa            | OtacÃ­lio Costa            |            18227 |   289 |                    15.86 |        15.61 |      44 |                42 |                  18
+ LJ-010   | Pata Amiga Ituporanga                | Ituporanga                |            25748 |   354 |                    13.75 |        16.53 |      51 |                47 |                  19
+ LJ-002   | Pata Amiga Rio do Sul                | Rio do Sul                |            73135 |   885 |                    12.10 |         8.35 |     149 |               136 |                  86
+ LJ-026   | Pata Amiga Sao Joaquim               | SÃ£o Joaquim               |            27234 |   320 |                    11.75 |        15.07 |      45 |                44 |                  27
+ LJ-024   | Pata Amiga Laguna                    | Laguna                    |            46122 |   541 |                    11.73 |         8.51 |      80 |                75 |                  45
+ LJ-006   | Pata Amiga Indaial                   | Indaial                   |            71987 |   750 |                    10.42 |         7.74 |     128 |               113 |                  65
+ LJ-023   | Pata Amiga Ararangua                 | AraranguÃ¡                 |            68274 |   689 |                    10.09 |         8.25 |     107 |               100 |                  68
+ LJ-022   | Pata Amiga Tubarao                   | TubarÃ£o                   |           105511 |   889 |                     8.43 |         7.69 |     157 |               144 |                  83
+ LJ-014   | Pata Amiga Jaragua do Sul            | JaraguÃ¡ do Sul            |           184579 |  1507 |                     8.16 |         8.01 |     239 |               225 |                 120
+ LJ-028   | Pata Amiga Curitibanos               | Curitibanos               |            39061 |   308 |                     7.89 |         8.65 |      47 |                46 |                  20
+ LJ-015   | Pata Amiga Sao Bento do Sul          | SÃ£o Bento do Sul          |            87310 |   567 |                     6.49 |         8.18 |     105 |                92 |                  55
+ LJ-030   | Pata Amiga Concordia                 | ConcÃ³rdia                 |            74641 |   470 |                     6.30 |         7.74 |      89 |                81 |                  39
+ LJ-001   | Pata Amiga Blumenau Centro           | Blumenau                  |           361855 |  2002 |                     5.53 |         7.80 |     315 |               301 |                 154
+ LJ-031   | Pata Amiga Xanxere                   | XanxerÃª                   |            52034 |   284 |                     5.46 |         8.17 |      54 |                53 |                  29
+ LJ-019   | Pata Amiga Palhoca                   | PalhoÃ§a                   |           168259 |   844 |                     5.02 |         7.69 |     172 |               157 |                  85
+ LJ-032   | Pata Amiga Sao Miguel do Oeste       | SÃ£o Miguel do Oeste       |            41520 |   186 |                     4.48 |         8.00 |      42 |                38 |                  25
+ LJ-004   | Pata Amiga Brusque                   | Brusque                   |           143270 |   558 |                     3.89 |         7.63 |     122 |               117 |                  63
+ LJ-021   | Pata Amiga Criciuma                  | CriciÃºma                  |           217392 |   822 |                     3.78 |         8.07 |     152 |               145 |                  76
+ LJ-025   | Pata Amiga Lages                     | Lages                     |           158846 |   593 |                     3.73 |         7.69 |     107 |               103 |                  61
+ LJ-018   | Pata Amiga Sao Jose Kobrasol         | SÃ£o JosÃ©                  |           250181 |   929 |                     3.71 |         8.01 |     155 |               147 |                  75
+ LJ-029   | Pata Amiga Chapeco                   | ChapecÃ³                   |           254235 |   824 |                     3.24 |         7.85 |     159 |               150 |                  82
+ LJ-013   | Pata Amiga Joinville Sul             | Joinville                 |           597658 |  1888 |                     3.16 |         7.83 |     309 |               291 |                 156
+ LJ-003   | Pata Amiga Itajai Praia              | ItajaÃ­                    |           264054 |   798 |                     3.02 |         7.98 |     159 |               147 |                  96
+ LJ-017   | Pata Amiga Florianopolis Norte       | FlorianÃ³polis             |           537213 |  1426 |                     2.65 |         8.02 |     275 |               261 |                 144
+(32 linhas)
+
+ faixa_franquia | pedidos | faturamento | percentual_rede
+----------------+---------+-------------+-----------------
+ Ouro           |    2316 |  1011264.38 |           56.39
+ Diamante       |     818 |   382209.74 |           21.31
+ Prata          |     719 |   314812.03 |           17.55
+ Bronze         |     188 |    84036.06 |            4.69
+ Nao Informado  |       3 |      986.30 |            0.05
+(5 linhas)
+
+ pedidos | sem_loja | sem_entrega | sem_itens | sem_valor | percentual_sem_entrega | percentual_sem_itens | percentual_sem_valor
+---------+----------+-------------+-----------+-----------+------------------------+----------------------+----------------------
+    4044 |        3 |        1953 |       257 |       121 |                  48.29 |                 6.36 |                 2.99
+(1 linha)
