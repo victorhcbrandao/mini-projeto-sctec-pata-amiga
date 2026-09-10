@@ -30,7 +30,19 @@ psql -X -U postgres -d dw_pata_amiga -v ON_ERROR_STOP=1 -f sql/05-perguntas.sql
 psql -X -U postgres -d dw_pata_amiga -v ON_ERROR_STOP=1 -f sql/06-validacao-final.sql
 ```
 
-Se `psql` não estiver no PATH, use o caminho completo do executável da instalação. A senha deve ser digitada no prompt local do `psql`. O arquivo 01 contém `\c`, um comando do cliente psql, e não deve ser colado inteiro no Query Tool do pgAdmin. No pgAdmin, após criar e carregar o banco pelo psql, é possível executar as consultas 02 a 06 no banco `dw_pata_amiga`.
+Se `psql` não estiver no PATH, use o caminho completo do executável da instalação. 
+
+### Windows: `psql` não reconhecido no PowerShell
+
+Em algumas instalações do PostgreSQL no Windows, o comando `psql` pode não estar disponível diretamente no `PATH` do sistema. Nesse caso, utilize o caminho completo do executável.
+
+Exemplo para PostgreSQL 18:
+
+```powershell
+& "C:\Program Files\PostgreSQL\18\bin\psql.exe" -X -U postgres -d postgres -v ON_ERROR_STOP=1 -f "sql/01-carga-staging.sql" 
+```
+
+A senha deve ser digitada no prompt local do `psql`. O arquivo 01 contém `\c`, um comando do cliente psql, e não deve ser colado inteiro no Query Tool do pgAdmin. No pgAdmin, após criar e carregar o banco pelo psql, é possível executar as consultas 02 a 06 no banco `dw_pata_amiga`.
 
 Depois de **cada etapa**, rode somente o bloco correspondente de `sql/00-conferencia.sql`. O bloco “DEPOIS DO 02” espera tabelas vazias; executá-lo após o 04 não representa uma falha da carga. Os arquivos 00, 01, 02 e os três CSVs foram preservados byte a byte. O 01 já contém os INSERTs de toda a origem: não importe os CSVs novamente.
 
