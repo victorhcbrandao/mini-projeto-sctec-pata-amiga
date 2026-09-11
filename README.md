@@ -7,6 +7,12 @@ Modelo dimensional para analisar 4.044 pedidos de uma rede de 32 pet shops de Sa
 
 **Validação:** executei as cargas 01 a 04, as consultas 05 e as verificações 06 no PostgreSQL 18.4 (Windows, 64 bits). Confirmei 4.044 pedidos distintos, a integridade das referências e a reconciliação exata de R$ 1.793.308,51. A exibição dos acentos foi verificada no pgAdmin. O material do curso utiliza PostgreSQL 16 como referência; os testes deste projeto foram realizados na versão 18.4. Veja [as evidências de validação](docs/VALIDACAO.md).
 
+## 🎥 Apresentação em vídeo
+
+A apresentação do projeto, incluindo a modelagem dimensional, as principais decisões de tratamento dos dados e a demonstração de uma das análises no PostgreSQL, está disponível no link abaixo:
+
+[▶️ Assistir à apresentação do projeto](https://drive.google.com/file/d/1eCJlTzxPCeiIRUaHby8OgMVY6jA5MqA8/view?usp=sharing)
+
 ## Como reproduzir do zero
 
 Referência do curso: PostgreSQL 16. Ambiente efetivamente validado: PostgreSQL 18.4 e cliente `psql`, com usuário autorizado a criar banco. Os scripts são UTF-8. Abra o terminal na raiz do projeto.
